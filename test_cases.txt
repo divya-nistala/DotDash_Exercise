@@ -1,0 +1,232 @@
+API TESTCASES
+TC_1: Test service status of the API endpoint (only one in this case)
+TC_2: Find how many tasks do not have "category" assigned
+TC_3: Aggregate and print only "task names"
+TC_4: Read API response and print tasks in descending "due date" order
+TC_5: Count and validate the number of tasks
+TC_6: Print name of the tasks that are completed.
+TC_7: Find tasks with Category as '2'.
+
+UI TEST SCENARIOS
+Test_Scenario_1: To test Functionality of the "Checkbox" for individual TODO Task, Checkbox should get selected after selecting the Checkbox.
+Test_Scenario_2: To test the Functionality of "Remove" Button, Selected TODO task should be removed from the TODO list.
+Test_Scenario_3: To test the Functionality of "Complete" Button, Selected TODO task should get strike off after selecting the Complete button.
+Test_Scenario_4: To test the Functionality of "Toggle All" Button, if "Toggle All" button is clicked it should select all the available TODO list Checkboxes.   
+Test_Scenario_5: To test the Functionality of "Advanced" Button, If the button is clicked, hidden Advanced menu should be Visible.
+Test_Scenario_6: To test the Functionality of "Delete Category", If one of the Category is selected it should redirect to the Delete Category page.
+Test_Scenario_7: To test the Functionality of "Delete Category Page", Redirected Category page should have options "Yes" Or "Never mind", Category should get deleted from the categories list after selecting "Yes" or redirect to the main page if clicked "Never mind"   
+Test_Scenario_8: To test the Functionality of "ADD Text" Field, Inserted Text should be added to the TODO list after clicking the ADD button with default colour code category as Black and with the date as ("NONE")
+Test_Scenario_9: To test the Functionality of "ADD Category" Field, A Category should be created with provided Text in the Text field and with selected Colour from the Drop-Down menu.   
+Test_Scenario_10: To test the Functionality of "ADD Category Colour" Button, The Colour code should be shown to the inserted text under the categories section. If none is selected text should be shown in Black colour.
+Test_Scenario_11: To test the Functionality of "Month End Due Dates", If date is given as 31 for a month containing 30 days, it should jump to the next day since 31 doesn't exist  
+Test_Scenario_12: To test the Functionality of "Overdue", if Due date is selected as past date. Default colour code should be RED.   
+
+UI Test Cases
+
+Test ID: TC_001
+Test Case Name: Check-Box To-Do list
+Test Description: User should be able to select the Check Box based on the tasks list.
+Pre-Conditions: Application should be launched.
+Test Step Description: 
+Step1: Start the application
+Step2: Select the check box from the To-do List
+Expected result: 
+Step 1: User should be able to access the application
+Step 2: User should be able to select the TODO List.
+Actual Result:
+Step1: User can successfully access the web page.
+Step2: User can select the TODO List.
+
+Test ID: TC_002
+Test Case Name:  Delete Tasks from To-o list
+Test Description: Selected To-Do tasks should be removed from the To-do list.
+Pre-Conditions: Tasks in the To-Do list should be selected 
+Test Step Description:
+Step1: Access the application
+Sstep2: Select the tasks from the To-do list using check box.
+Step3: Click on the Remove button
+Expected result:
+Step1: User should be able to start the application
+Step2: User should be able to select the task from the To-Do List.
+Step3: User should be able to click on the Remove button and tasks should be removed from the list.
+Actual Result:
+Step1: User can access the application.
+Step2: Task to be removed can be selected.
+Step3: Selected Task is removed from the list.
+
+Test ID: TC_003
+Test Case Name: Complete_task
+Test Description: Selected To-Do tasks should be strike off in the To-Do list.
+Pre-Conditions: Tasks should be selected from the To-Do list.
+Test Step Description:
+Step1: Launch the application
+Sstep2: Select the tasks from the To-do List 
+Step3: Click on the “Complete” button
+Expected result
+Step1: User should be able to access the application
+Step2: User should be able to select the task to be completed from the T0-Do List.
+Step3: User should be able to click on the “Complete” button and tasks should have strike off text in the To-Do List.
+Actual Result
+Step1: Application can be accessed.
+Step2: Task can be selected.
+Step3: Tasks selected are stricken-off from the To-Do List.
+
+Test ID: TC_004
+Test Case Name: Toggle-All task
+Test Description: All the tasks should get selected after selecting Toggle-all button.
+Pre-Conditions: User should be able to select all the tasks.
+Test Step Description: 
+Step1: Start the application
+Step2: Select the Toggle All button
+Expected result
+Step1: User should access the application
+Step2: All the tasks in To-do list should get selected.
+Actual Result
+Step1: User can access the application.
+Step2: All the tasks are selected from the To-Do list.
+
+Test ID: TC_005
+Test Case Name: Advanced menu
+Test Description: Advanced menu options should be visible after clicking on the “Advanced” menu 
+Pre-Conditions: User should be able to access the application.
+Test Step Description
+Step1: Start the application
+Step2: Click on the advanced menu option.
+Expected result:
+Step1: User should be able to start the application
+Step2: User should be able to access the Advanced menu.
+Actual Result
+Step1: User can access the application.
+Step2: Advanced Menu options are visible to the User after clicking “Advanced” button.
+
+Test ID: TC_006
+Test Case Name: Delete_Category
+Test Description: User should be redirected to the Delete Category page
+Pre-Conditions: User should select the delete category option.
+Test Step Description:
+Step1: Start the application
+Step2: Select one of the category from the “Categories” list.
+Step3: Click on the Delete button
+Expected result:
+Step1: User should be able to start the application
+Step2: User should be able to select the category from the Categories list
+Step3: User should be redirected to the Delete Category page.
+Actual Result:
+Step1: Application can be accessed.
+Step2: Category can be selected from the Categories list.
+Step3: Page is redirected to the Delete Category page.
+
+Test ID: TC_007
+Test Case Name: Delete_category_page
+Test Description: User should be able to delete the category from categories.
+Pre-Conditions: User should select the category which has to be deleted.
+Test Step Description:
+Step1: Start the application.
+Step2: Select one of the category from the Categories list.
+Step3: Click on the Delete button.
+Step4: Select option “Yes”.
+Expected result:
+Step1: User should be able to start the application.
+Step2: User should be able to select the category from the category list.
+Step3: User should be redirected to the delete category page.
+Step4: Category should get deleted from the categories.
+Actual Result:
+Step1: User can access the application.
+Step2: User can select a Category.
+Step3: Redirected to the delete page.
+Step4: Selected Category is deleted from the Categories list.
+
+Test ID: TC_008
+Test Case Name: Add_text
+Test Description: User should be able to Add tasks as per the text entered in the text field
+Pre-Conditions: User should enter text in the provided text field
+Test Step Description
+Step1: Start the application
+Step2: Enter text in the provided text field.
+Step3: Click Add.
+Expected result
+Step1: User should be able to start the application
+Step2: User should be able to enter the text in the text field
+Step3Tasks should be created as per the text provided.
+Actual Result
+Step1: Application can be accessed.
+Step2: Text can be entered in the text field provided.
+Step3: New Task is created.
+
+Test ID: TC_009
+Test Case Name: Add_Category
+Test Description: User should be able to add a new category to the Category list
+Pre-Conditions: User should enter the text in the text field to add to the Category menu
+Test Step Description
+Step1: Start the application
+Step2: Enter text in the text field for Category 
+Step3: Click on Add Category.
+Expected result
+Step1: User should be able to start the application
+Step2: User should be able add text in the provided text field
+Step3: Category should be added to the category list
+Actual Result
+Step1: Application can be accessed.
+Step2: Text can be added in the text field.
+Step3: New Category is added.
+
+Test ID: TC_010
+Test Case Name: Add_category_color
+Test Description: User should be able to add selected colour to the category
+Pre-Conditions: User should select the colour from the drop down
+Test Step Description:
+Step1: Start the application
+Step2: Enter text in the text field for category 
+Step3: Click Add.
+Step4: Select the colour from drop down menu
+Expected result
+Step1: User should be able to start the application
+Step2: User should be able add text in the provided text field
+Step3: Category should be added to the category list
+Step4: User selected colour should be added to the category
+Actual Result
+Step1: Application is accessed.
+Step2: Text can be added in the text field.
+Step3: Category is added.
+Step4: Category is displayed with selected colour.
+
+Test ID: TC_011
+Test Case Name: Month-end_duedate
+Test Description: If the due date is given as 31 for a month with 30 days, Date should appear as next month’s 1st as it is invalid date.
+Pre-Conditions: User should select the Due Date from the Date drop down.
+Test Step Description: 
+Step1: Start the application
+Step2: Enter text in the task text field
+Step3: Select the date as 31, from the month that has only 30 days from the date drop-down list.
+Step4: Click on Add.
+Expected result
+Step1: User should be able to start the application
+Step2: User should be able to enter the text in the text field to Add task
+Step3: User should select the date from the drop down as 31.
+Step4: Due date for task should appear as 1st day for the next month.
+Actual Result
+Step1: Application is accessed.
+Step2: Text can be entered in the text field.
+Step3: Date is selected.
+Step4: Date appears as the 1st of the next month.
+
+Test ID: TC_012
+Test Case Name: Overdue
+Test Description: If the Due Date is past or given as past date, task should be added in “Red” colour.
+Pre-Conditions: User should enter past Due Date.
+Test Step Description:
+Step1: Start the application.
+Step2: Enter text in the task text field.
+Step3: Select past date from the date drop down list
+Step4: Click on Add.
+Expected result:
+Step1: User should be able to access the application
+Step2: User should be able to enter the text in the text field to Add a task
+Step3: User should be able to select past date from the drop down
+Step4: Task should be added with Red colour.
+Actual Result:
+Step1: Application can be accessed.
+Step2: Text can be entered in the text field.
+Step3: Past Date is selected.
+Step4: Task is added in the “Red” colour.
+
