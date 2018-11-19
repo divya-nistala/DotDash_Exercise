@@ -1,5 +1,4 @@
-# Dotdash_Exercise
-[Dotdash Exercise] - "nss-todo-automation"
+"nss-todo-automation"
 
 The test_cases.txt file has the list of API test cases, UI test scenarios and test cases.
 The APICall_GETResponse.txt file is the GETResponse from the fakeAPI call.
